@@ -11,6 +11,15 @@ namespace TriangleProblem {
 			Lines = new List<LineSegment>();
 		}
 
+		public bool ContainsLine(LineSegment line) {
+			foreach (LineSegment lineSegment in Lines) {
+				if (lineSegment.Equals(line)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
 		public void AddLine(LineSegment line) {
 			Lines.Add(line);
 		}

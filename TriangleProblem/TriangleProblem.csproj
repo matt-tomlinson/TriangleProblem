@@ -5,4 +5,22 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Data\triangles1.txt" />
+    <None Remove="Data\triangles2.txt" />
+    <None Remove="Data\triangles4.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\triangles1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\triangles4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\triangles2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
